@@ -9,11 +9,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  min-height: 100%
+  height: 100vh
 }
 
 body {
-  min-height: 100%;
+  height: 100vh;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   background-image: url('../images/wave.jpg');
@@ -67,7 +67,7 @@ main {
 }
 
 #welcome-msg {
-  margin-top: 100%;
+  margin-top: 50vh;
   color: #ffffff;
   text-align: center;
 }
@@ -78,4 +78,23 @@ main {
   text-align: center;
   margin-top: 1.5rem;
 }
+
+
+/***** MEDIA QUERY *****/
+@media (min-width:700px) {
+  #logo {
+    max-height: 66px;
+  }
+
+  #welcome-msg {
+    font-size: 4rem;
+  }
+
+  #down-arrow {
+    font-size: 4rem;
+  }
+}
+
+
+
 
