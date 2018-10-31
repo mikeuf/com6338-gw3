@@ -1,14 +1,60 @@
 <!DOCTYPE html>
-<head>
-  <title>Spongebob</title>
-</head>
-<body>
-  <h1>Hello World - /dev branch</h1>
-  <p>test update -- from Mike</p>
-  <p>test 2</p>
-  <p>test from local</p>
-  <p>test from server</p>
-  <p>test 3 from local</p>
-</body>
+<html lang="en">
+  <head>
+    <title>Spongebob</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <script>
+      function navBtnToggle() {
+        var i = document.getElementById('nav-mobile');
+        if (i.style.display != 'block') {
+          i.style.display = 'block';
+        } else {
+          i.style.display = 'none';
+        }
+      }
+    </script>
+
+
+    <head>
+      <title>Spongebob</title>
+    </head>
+    <body>
+      <header>
+        <div id="header-top">
+        <img id="logo" src="assets/images/spongebob-logo.png" />
+        <a onClick="navBtnToggle();">
+          <p id="hamburger">&#9776;</p>
+        </a> 
+        </div> <!-- end header-top -->
+        <div id="header-bottom">
+
+        <nav id="nav-mobile">
+          <ul>
+            <li>
+              <a href="#">Patrick Star</a>
+            </li>
+            <li>
+              <a href="#">Mr. Krabs</a>
+            </li>
+            <li>
+              <a href="#">Squidward</a>
+            </li>
+          </ul>
+        </nav>
+        </div> <!-- end header-bottom -->
+      </header>
+      <main>
+        <h1 id="welcome-msg">EXPLORE THE<br />DEEP BLUE SEA</h1>
+        <p id="down-arrow">&#x25BC;</p>
+      </main>
+    </body>
 </html>
 
