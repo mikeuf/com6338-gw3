@@ -87,7 +87,7 @@ main {
 }
 
 #characters{
-    background-image: url(assets/images/under-water.jpg);
+    background-image: url(../images/under-water.jpg);
     background-repeat: no-repeat;
     background-position: center center; 
     background-attachment: fixed;
