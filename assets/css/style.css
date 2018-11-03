@@ -81,92 +81,92 @@ main {
 
 .tagline{
     text-align: center;
-    font-size: 1.5em; 
-    width: 90%; 
-    height: 60vh; 
+    font-size: 1.5em;
+    width: 90%;
+    height: 60vh;
 }
 
 #characters{
-    background-image: url(../images/under-water.jpg);
+    background-image: url('..images/under-water.jpg');
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
     background-attachment: fixed;
-    color: white; 
+    color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 16px; 
+    font-size: 16px;
     display: flex;
     flex-direction: column;
-    padding: 0%; 
+    padding: 0%;
 }
 
 .character-headings{
     font-family: 'Roboto', sans-serif;
-    color: #006ce2; 
+    color: #006ce2;
     width: 70%;
-    padding-top: 5%; 
-    padding-left: 5%; 
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
 main img{
-    width: 80%; 
+    width: 80%;
     display: block;
     margin: auto;
 }
 
 main p{
-    font-size: 1.5em; 
-    padding-top: 5%;  
+    font-size: 1.5em;
+    padding-top: 5%;
     width: 90%;
     margin: auto;
-    
+
 }
 
 #spongebob{
     background-color: white;
-    color: black; 
-    padding-top: 5%; 
-    padding-bottom: 10%; 
-    
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
 }
 
 
 #patrick{
-    background-color: #5AC7E0; 
-    padding-top: 5%; 
-    padding-bottom: 10%; 
+    background-color: #5AC7E0;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 
 #krabs{
-    background-color: white; 
-    padding-top: 5%; 
-    padding-bottom: 10%; 
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 10%;
     color: black;
 }
 
 
 
 #squidward{
-    background-color:#5AC7E0; 
-    padding-top: 5%; 
-    padding-bottom: 10%; 
-    color: white; 
+    background-color:#5AC7E0;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    color: white;
 }
 
 .pg{
         background-color: white;
-        width: 100%; 
+        width: 100%;
         color: #006CE2;
         text-align: center;
         padding-top: 10%;
-        padding-bottom: 10%; 
+        padding-bottom: 10%;
         text-decoration: underline;
-        font-size: 2em; 
-        font-weight: bold;   
+        font-size: 2em;
+        font-weight: bold;
     }
 
  .in-between{
-        background-color: #5AC7E0; 
+        background-color: #5AC7E0;
         height: 15vh;
     }
 
@@ -174,12 +174,59 @@ main p{
     color: black;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 5%; 
-    background-color: white; 
-    padding-top: 5%; 
+    padding-bottom: 5%;
+    background-color: white;
+    padding-top: 5%;
 }
-    
 
+
+/**** Songs Page ******/
+
+#welcome-msg-songs {
+  margin-top: 25vh;
+  color: #ffffff;
+  text-align: center;
+}
+
+#down-arrow-songs {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem 0 7rem 0
+}
+
+#songs-body {
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background-image: url('../images/under-water.jpg');
+  background-color: #006CE2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/****** Flex Grid *******/
+
+.flex-grid {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.flex-grid .col {
+  padding: 2%;
+}
+
+.col iframe {
+  width: 380px;
+}
 
 
 /***** MEDIA QUERY *****/
@@ -196,27 +243,27 @@ main p{
     font-size: 4rem;
   }
   main img{
-    width: 30%; 
+    width: 30%;
     height: 20%;
-    margin: 0; 
+    margin: 0;
 }
 
 main p{
-    margin: 0; 
+    margin: 0;
     padding-left: 5%;
-   
+
 }
-    
+
 #spongebob{
-    display: flex; 
-    flex-direction: row; 
-}   
-    
+    display: flex;
+    flex-direction: row;
+}
+
  .spongebob-container{
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
-    
+
 #patrick{
         display: flex;
         flex-direction: row;
@@ -226,7 +273,7 @@ main p{
         display: flex;
         flex-direction: column;
 }
-    
+
 #krabs{
         display: flex;
         flex-direction: row;
@@ -239,22 +286,29 @@ main p{
 
 #squidward{
        display: flex;
-       flex-direction: row; 
+       flex-direction: row;
     }
-    
+
 .squidward{
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
-    
+
 .tagline{
         text-align: center;
-        width: 30%; 
+        width: 30%;
         margin: auto;
-        font-size: 2em; 
+        font-size: 2em;
     }
+
+
+  #welcome-msg-songs {
+    font-size: 2rem;
+  }
+
+  .flex-grid {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
-
-
-
-
