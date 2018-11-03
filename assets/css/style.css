@@ -32,7 +32,6 @@ header {
 }
 
 
-
 main {
   padding: 5%;
 }
@@ -79,104 +78,93 @@ main {
   margin-top: 1.5rem;
 }
 
-.tagline{
-    text-align: center;
-    font-size: 1.5em;
-    width: 90%;
-    height: 60vh;
+.tagline {
+  text-align: center;
+  font-size: 1.5em;
+  width: 90%;
+  height: 60vh;
 }
 
-#characters{
-    background-image: url('..images/under-water.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    padding: 0%;
+#characters {
+  background-image: url('../images/under-water.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
 }
 
-.character-headings{
-    font-family: 'Roboto', sans-serif;
-    color: #006ce2;
-    width: 70%;
-    padding-top: 5%;
-    padding-left: 5%;
+.character-headings {
+  font-family: 'Roboto', sans-serif;
+  color: #006ce2;
+  width: 70%;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
 main img{
-    width: 80%;
-    display: block;
-    margin: auto;
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
-main p{
-    font-size: 1.5em;
-    padding-top: 5%;
-    width: 90%;
-    margin: auto;
-
+main p {
+  font-size: 1.5em;
+  padding-top: 5%;
+  width: 90%;
+  margin: auto;
 }
 
-#spongebob{
-    background-color: white;
-    color: black;
-    padding-top: 5%;
-    padding-bottom: 10%;
-
-}
-
-
-#patrick{
-    background-color: #5AC7E0;
-    padding-top: 5%;
-    padding-bottom: 10%;
+#spongebob, #krabs {
+  background-color: white;
+  color: black;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 
 
-#krabs{
-    background-color: white;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    color: black;
+#patrick {
+  background-color: #5AC7E0;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 
 
-
-#squidward{
-    background-color:#5AC7E0;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    color: white;
+#squidward {
+  background-color:#5AC7E0;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  color: white;
 }
 
-.pg{
-        background-color: white;
-        width: 100%;
-        color: #006CE2;
-        text-align: center;
-        padding-top: 10%;
-        padding-bottom: 10%;
-        text-decoration: underline;
-        font-size: 2em;
-        font-weight: bold;
-    }
+.pg {
+  background-color: white;
+  width: 100%;
+  color: #006CE2;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-decoration: underline;
+  font-size: 2em;
+  font-weight: bold;
+}
 
- .in-between{
-        background-color: #5AC7E0;
-        height: 15vh;
-    }
+.in-between {
+  background-color: #5AC7E0;
+  height: 15vh;
+}
 
-    footer{
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 5%;
-    background-color: white;
-    padding-top: 5%;
+footer {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5%;
+  background-color: white;
+  padding-top: 5%;
 }
 
 
@@ -242,59 +230,29 @@ main p{
   #down-arrow {
     font-size: 4rem;
   }
+
   main img{
     width: 30%;
     height: 20%;
     margin: 0;
-}
+  }
 
-main p{
+  main p{
     margin: 0;
     padding-left: 5%;
+  }
 
-}
-
-#spongebob{
+  #spongebob, #patrick, #krabs, #squidward {
     display: flex;
     flex-direction: row;
-}
+  }
 
- .spongebob-container{
+ .spongebob-container, .patrick-container, .krabs-container, .squidward {
     display: flex;
     flex-direction: column;
-}
+  }
 
-#patrick{
-        display: flex;
-        flex-direction: row;
-}
-
-.patrick-container{
-        display: flex;
-        flex-direction: column;
-}
-
-#krabs{
-        display: flex;
-        flex-direction: row;
-}
-
-.krabs-container{
-        display: flex;
-        flex-direction: column;
-}
-
-#squidward{
-       display: flex;
-       flex-direction: row;
-    }
-
-.squidward{
-        display: flex;
-        flex-direction: column;
-    }
-
-.tagline{
+  .tagline{
         text-align: center;
         width: 30%;
         margin: auto;
