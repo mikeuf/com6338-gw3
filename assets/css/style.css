@@ -32,7 +32,7 @@ header {
 }
 
 
-main {
+#home-main {
   padding: 5%;
 }
 
@@ -239,7 +239,7 @@ footer {
 
   main p{
     margin: 0;
-    padding-left: 5%;
+    /*padding-left: 5%;*/
   }
 
   #spongebob, #patrick, #krabs, #squidward {
