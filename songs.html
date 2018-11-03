@@ -23,17 +23,20 @@
     </script>
 
 
-    <head>
-      <title>Songs</title>
-    </head>
-    <body>
+    <body id="songs-body">
+
       <header>
+
         <div id="header-top">
-        <img id="logo" src="assets/images/spongebob-logo.png" />
+
+        <img id="logo" src="spongebob-logo.png" />
         <a onClick="navBtnToggle();">
           <p id="hamburger">&#9776;</p>
         </a>
+
         </div> <!-- end header-top -->
+
+
         <div id="header-bottom">
 
         <nav id="nav-mobile">
@@ -49,11 +52,57 @@
             </li>
           </ul>
         </nav>
+
         </div> <!-- end header-bottom -->
+
       </header>
-      <main>
-        <h1 id="welcome-msg">DIVE INTO SOME SONGS</h1>
-        <p id="down-arrow">&#x25BC;</p>
+
+
+      <main id "song-main">
+        <h1 id="welcome-msg-songs">DIVE INTO SOME SONGS</h1>
+
+        <p id="down-arrow-songs">&#x25BC;</p>
+
+        <!--- Begin Flex Grid --->
+        <div class="flex-grid">
+          <div class="col">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/He-LBIyBUz8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div>
+
+          <div class="col">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/sTbc2NeErnU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div>
+
+          <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C_ADjpeLg1w" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_gt9yt9h7GU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+
+          <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MlnDf3e3PQ0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+
+          <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tEDY0-vPFR8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div> <!--- End Flex Grid --->
+
+
       </main>
+
+      <!--- Same as Character Page -->
+      <p class="in-between"></p>
+
+      <footer>@ Copyright 2018</footer>
+
+
     </body>
 </html>
