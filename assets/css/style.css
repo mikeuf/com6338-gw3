@@ -54,7 +54,9 @@ header img{
 }
 .cross{
   background:none;
-  position:absolute;
+  /* position:absolute; */
+  display: block;
+  float: right;
   top:0px;
   right:0;
   margin:0% 5% 0% 0%;
@@ -67,7 +69,7 @@ header img{
   outline:none;
   z-index:10000000000000;
 }
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu{z-index:1000000; font-family: 'Roboto', sans-serif; font-weight:bold; font-size:1em; width:100%; background:#f1f1f1; /* position:absolute; */ text-align:center;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -137,6 +139,9 @@ body {
 
 
 
+	nav{
+		font-family: 'Roboto', sans-serif;
+	}
 
 
 
@@ -305,9 +310,6 @@ footer {
    		display: block;
 	}
 
-	nav{
-		font-family: 'Roboto', sans-serif;
-	}
 
 	.nav-wrap{
 		width:42%;
