@@ -11,98 +11,90 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv-printshiv.min.js"></script>
     <![endif]-->
-    <script>
-      function navBtnToggle() {
-        var i = document.getElementById('nav-mobile');
-        if (i.style.display != 'block') {
-          i.style.display = 'block';
-        } else {
-          i.style.display = 'none';
-        }
-      }
-    </script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body id="songs-body">
+
+    <button class="hamburger">&#9776;</button>
+  	<button class="cross">&#735;</button>
+
+  		<div id="container">
+
+  			<header class="header" role="banner">
+
+  			  <a href="index.html"><img src="assets/images/spongebob-logo.png" alt="SpongeBob SquarePants" title="SpongeBob SquarePants" /></a>
 
 
-    <body id="songs-body">
+  				<nav class="menu">
+  					<ul>
+  						<li><a href="tea.html">Tea</a></li>
+  						<li><a href="book.html">Book</a></li>
+  						<li><a href="contact.html">Contact</a></li>
+  					</ul>
+  	        	</nav>
 
-      <header>
+  			  <div class="nav-wrap topBotomBordersOut">
+  			    <nav class="desktop-menu" role="navigation">
+  			      <ul class="unstyled list-hover-slide">
+  			        <li><a href="characters.html">Characters</a></li>
+  			        <li><a href="songs.html">Songs</a></li>
+  			      </ul>
+  			    </nav>
+  			</header>
 
-        <div id="header-top">
-
-        <img id="logo" src="spongebob-logo.png" />
-        <a onClick="navBtnToggle();">
-          <p id="hamburger">&#9776;</p>
-        </a>
-
-        </div> <!-- end header-top -->
-
-
-        <div id="header-bottom">
-
-        <nav id="nav-mobile">
-          <ul>
-            <li>
-              <a href="#">Patrick Star</a>
-            </li>
-            <li>
-              <a href="#">Mr. Krabs</a>
-            </li>
-            <li>
-              <a href="#">Squidward</a>
-            </li>
-          </ul>
-        </nav>
-
-        </div> <!-- end header-bottom -->
-
-      </header>
+  		</div>
 
 
-      <main id "song-main">
-        <h1 id="welcome-msg-songs">DIVE INTO SOME SONGS</h1>
-
-        <p id="down-arrow-songs">&#x25BC;</p>
-
-        <!--- Begin Flex Grid --->
-        <div class="flex-grid">
-          <div class="col">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/He-LBIyBUz8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          </div>
-
-          <div class="col">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/sTbc2NeErnU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          </div>
-
-          <div class="col">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/C_ADjpeLg1w" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-          <div class="col">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_gt9yt9h7GU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
 
 
-          <div class="col">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MlnDf3e3PQ0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+    <main id "song-main">
+      <h1 id="welcome-msg-songs">DIVE INTO SOME SONGS</h1>
+
+      <p id="down-arrow-songs">&#x25BC;</p>
+
+      <!--- Begin Flex Grid --->
+      <div class="flex-grid">
+        <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/He-LBIyBUz8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sTbc2NeErnU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/C_ADjpeLg1w" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_gt9yt9h7GU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
 
-          <div class="col">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tEDY0-vPFR8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-        </div> <!--- End Flex Grid --->
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/MlnDf3e3PQ0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
 
-      </main>
+        <div class="col">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/tEDY0-vPFR8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-      <!--- Same as Character Page -->
-      <p class="in-between"></p>
-
-      <footer>@ Copyright 2018</footer>
+      </div> <!--- End Flex Grid --->
 
 
-    </body>
+    </main>
+
+    <!--- Same as Character Page -->
+    <p class="in-between"></p>
+
+    <footer>@ Copyright 2018</footer>
+
+    <script src="hamburger.js"></script>
+
+  </body>
+
 </html>
