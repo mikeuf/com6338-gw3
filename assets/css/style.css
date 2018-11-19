@@ -222,6 +222,7 @@ body {
   cursor: default;
   background-color: #5AC7E0;
   padding: 1em;
+  margin-bottom: 3rem;
 }
 
 .hovereffect .overlay {
