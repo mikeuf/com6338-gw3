@@ -15,10 +15,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ********* Begin Univerisal codes ****** */
 #container{
-	background-color: #006CE2;
 	max-width:1000px;
 	margin: auto;
 }
+
 header{
 	background-color: #006CE2;
 }
