@@ -92,15 +92,6 @@ body {
 }
 
 
-
-
-
-	nav{
-		font-family: 'Roboto', sans-serif;
-	}
-
-
-
 #welcome-msg {
   margin-top: 50vh;
   color: #ffffff;
@@ -148,7 +139,7 @@ main img{
   margin: auto;
 }
 
-main p {
+#characters-main p {
   font-size: 1.5em;
   padding-top: 5%;
   width: 90%;
