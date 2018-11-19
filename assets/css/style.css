@@ -82,15 +82,6 @@ header img{
 /* ******* END HAMBURGER MENU STYLES ******* */
 
 
-body {
-  height: 100vh;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  background-image: url('../images/wave.jpg');
-  background-color: #006CE2;
-  background-size: cover;
-}
-
 /*  arrow and welcome h1 */
 #welcome-msg {
   margin-top: 50vh;
@@ -105,6 +96,7 @@ body {
   margin-top: 1.5rem;
 }
 
+/* ************ Subpages formatting ************ */
 /*  Subpage Welcome message */
 #welcome-msg-subpage {
   margin-top: 30vh;
@@ -119,19 +111,38 @@ body {
   margin: 1.5rem 0 5em 0;
 }
 
-
-#characters {
+#songs-body, #characters {
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
   background-image: url('../images/under-water.jpg');
+  background-color: #006CE2;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  color: white;
+}
+
+/* ************ END Subpages formatting ************ */
+
+/* *********** START HOME PAGE ************** */
+body {
+  height: 100vh;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  display: flex; /*display flex causes header to be contained  */
-  flex-direction: column;
-  padding: 0%;
+  background-image: url('../images/wave.jpg');
+  background-color: #006CE2;
+  background-size: cover;
 }
+
+
+/* *********** END HOME PAGE ************** */
+
+
+
+/* *********** START CHARACTER PAGE ************** */
+
 
 .character-headings {
   font-family: 'Roboto', sans-serif;
@@ -141,13 +152,13 @@ body {
   padding-left: 5%;
 }
 
-main img{
+#spongebob img, #krabs img, #squidward img, #patrick img {
   width: 80%;
   display: block;
   margin: auto;
 }
 
-#characters-main p {
+#spongebob p, #krabs p, #squidward p, #patrick p {
   font-size: 1.5em;
   padding-top: 5%;
   width: 90%;
@@ -202,22 +213,12 @@ footer {
   padding-top: 5%;
 }
 
+/* *********** END CHARACTER PAGE ************** */
 
-/********* Songs Page ***********/
+
+/********* START SONGS Page ***********/
 
 
-#songs-body {
-  box-sizing: border-box;
-  height: 100vh;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  background-image: url('../images/under-water.jpg');
-  background-color: #006CE2;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-}
 
 /****** Flex Grid Song Page *******/
 
@@ -343,14 +344,13 @@ footer {
     font-size: 2rem;
     margin-top: 70vh;
   }
-
   #down-arrow {
     font-size: 2rem;
   }
   #down-arrow-subpage {
     margin-bottom: 1em;
   }
-  main img{
+  #spongebob img, #krabs img, #squidward img, #patrick img {
     width: 30%;
     height: 20%;
     margin: 0;
@@ -371,16 +371,6 @@ footer {
     flex-direction: column;
   }
 
-  .tagline{
-        text-align: center;
-        width: 30%;
-        margin: auto;
-        font-size: 2em;
-    }
-
-  #welcome-msg-songs {
-    font-size: 2rem;
-  }
 
   .flex-grid {
     flex: 1;
