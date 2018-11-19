@@ -124,6 +124,21 @@ header img{
   background-attachment: fixed;
 }
 
+
+.in-between {
+  background-color: #5AC7E0;
+  height: 15vh;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5%;
+  background-color: white;
+  padding-top: 5%;
+}
+
 /* ************ END Subpages formatting ************ */
 
 /* *********** START HOME PAGE ************** */
@@ -173,20 +188,12 @@ body {
 }
 
 
-#patrick {
-  background-color: #5AC7E0;
-  padding-top: 5%;
-  padding-bottom: 10%;
-}
-
-
-#squidward {
+#patrick, #squidward {
   background-color:#5AC7E0;
   padding-top: 5%;
   padding-bottom: 10%;
   color: white;
 }
-
 .pg {
   background-color: white;
   width: 100%;
@@ -199,19 +206,7 @@ body {
   font-weight: bold;
 }
 
-.in-between {
-  background-color: #5AC7E0;
-  height: 15vh;
-}
 
-footer {
-  color: black;
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 5%;
-  background-color: white;
-  padding-top: 5%;
-}
 
 /* *********** END CHARACTER PAGE ************** */
 
@@ -356,20 +351,20 @@ footer {
     margin: 0;
   }
 
-  main p{
+  /*main p{
     margin: 0;
-    /*padding-left: 5%;*/
-  }
+    /*padding-left: 5%;
+  } */
 
   #spongebob, #patrick, #krabs, #squidward {
     display: flex;
     flex-direction: row;
   }
-
+/*
  .spongebob-container, .patrick-container, .krabs-container, .squidward {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
 
   .flex-grid {
