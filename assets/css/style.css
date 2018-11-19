@@ -19,22 +19,26 @@ h1, h2, h3, h4, h5, h6 {
 	max-width:1000px;
 	margin: auto;
 }
-
 header{
-	padding: 1.5%;
+	background-color: #006CE2;
+}
+
+.desktop-header{
 	display:flex;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header img{
 	width:60%;
 	max-width: 350px;
+	padding: 1.5%;
 }
 
 .desktop-menu {
 	display: none;
 }
+
 
 /* ******* HAMBURGER MENU STYLES ******* */
 .hamburger{
@@ -54,13 +58,11 @@ header img{
 }
 .cross{
   background:none;
-  /* position:absolute; */
-  display: block;
-  float: right;
+  position:absolute;
   top:0px;
   right:0;
   margin:0% 5% 0% 0%;
-  color:#ffffff;
+  color:#006CE2;
   border:0;
   font-size:3em;
   line-height:65px;
@@ -69,7 +71,7 @@ header img{
   outline:none;
   z-index:10000000000000;
 }
-.menu{z-index:1000000; font-family: 'Roboto', sans-serif; font-weight:bold; font-size:1em; width:100%; background:#f1f1f1; /* position:absolute; */ text-align:center;}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
 .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -77,9 +79,7 @@ header img{
 .menu ul li a:hover {  color: #666; text-decoration:none;}
 .menu a{text-decoration:none; color:#666;}
 .menu a:hover{text-decoration:none; color:#666;}
-
 /* ******* END HAMBURGER MENU STYLES ******* */
-
 
 
 body {
@@ -91,50 +91,6 @@ body {
   background-size: cover;
 }
 
-
-
-/* ***** Old Header ******
-
-#header-top {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-
-#home-main {
-  padding: 5%;
-}
-
-#logo {
-  max-height: 33px;
-}
-
-#hamburger {
-  color: #ffffff;
-  font-size: 3rem;
-  position: relative;
-  top: -15px;
-}
-
-#nav-mobile {
-  display: none;
-}
-
-#nav-mobile ul {
-  list-style: none;
-  float: left;
-}
-
-#nav-mobile ul li {
-}
-
-#nav-mobile ul li a {
-  color: #ffffff;
-  font-size: 2rem;
-  text-decoration: none;
-}
- Old Header ****** */
 
 
 
@@ -310,9 +266,12 @@ footer {
    		display: block;
 	}
 
+	nav{
+		font-family: 'Roboto', sans-serif;
+	}
 
 	.nav-wrap{
-		width:42%;
+		width:47%;
 	    text-align:center;
 	}
 
@@ -320,9 +279,10 @@ footer {
 	    list-style-type: none;
 	}
 
+
 	.desktop-menu ul li{
 		display: inline;
-		padding: 4% 12% 4% 12%;
+		padding: 3% 12% 3% 12%;
 		background-color: #ffffff;
 		transition-timing-function: ease;
 	}
@@ -370,8 +330,19 @@ footer {
 
 
 }
+
+
 /**************************** END MEDIA QUERY 600 *********************/
 
+
+
+/**************************** START MEDIA QUERY 640 *********************/
+@media (min-width: 640px){
+	.nav-wrap{
+	    width:43%;
+	}
+}
+/**************************** END MEDIA QUERY 640 *********************/
 
 
 /**************************** START MEDIA QUERY 700 *********************/
@@ -431,6 +402,7 @@ footer {
 /**************************** END MEDIA QUERY 700 *********************/
 
 /**************************** START MEDIA QUERY 740 *********************/
+
 @media (min-width: 740px){
 
 	.nav-wrap{
@@ -454,7 +426,7 @@ footer {
 @media (min-width: 940px){
 
 	.nav-wrap{
-	    width:25%;
+	    width:28%;
 	}
 }
 /**************************** END MEDIA QUERY 940 *********************/
