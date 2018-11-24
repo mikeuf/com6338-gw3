@@ -167,13 +167,55 @@ body {
   padding-left: 5%;
 }
 
-#spongebob img, #krabs img, #squidward img, #patrick img {
+#characters {
+  background-image: url('../images/under-water.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+ 
+  /*display flex causes header to be contained  */
+  flex-direction: column;
+  padding: 0%;
+}
+
+.character-headings {
+  font-family: 'Roboto', sans-serif;
+  color: #006ce2;
+  width: 70%;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+main img{
   width: 80%;
   display: block;
   margin: auto;
 }
 
-#spongebob p, #krabs p, #squidward p, #patrick p {
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#spongebob, #krabs, #patrick {
+    display: flex;
+}
+
+
+#spongebob img{
+   max-width: 300px; 
+}
+
+#spongebob-container{
+    width: 80%;
+} 
+
+#spongebob p, #krabs p, #patrick p, #squidward p{
+    
   font-size: 1.5em;
   padding-top: 5%;
   width: 90%;
@@ -188,12 +230,20 @@ body {
 }
 
 
-#patrick, #squidward {
+#patrick {
+  background-color: #5AC7E0;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+
+#squidward {
   background-color:#5AC7E0;
   padding-top: 5%;
   padding-bottom: 10%;
   color: white;
 }
+
 .pg {
   background-color: white;
   width: 100%;
@@ -206,7 +256,19 @@ body {
   font-weight: bold;
 }
 
+.in-between {
+  background-color: #5AC7E0;
+  height: 15vh;
+}
 
+footer {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5%;
+  background-color: white;
+  padding-top: 5%;
+}
 
 /* *********** END CHARACTER PAGE ************** */
 
@@ -418,26 +480,72 @@ body {
   #down-arrow-subpage {
     margin-bottom: 1em;
   }
-  #spongebob img, #krabs img, #squidward img, #patrick img {
+  
+  main img{
     width: 30%;
     height: 20%;
     margin: 0;
   }
 
-  /*main p{
+  main p{
     margin: 0;
-    /*padding-left: 5%;
-  } */
+    padding-left: 5%;
+  }
 
   #spongebob, #patrick, #krabs, #squidward {
     display: flex;
     flex-direction: row;
   }
-/*
- .spongebob-container, .patrick-container, .krabs-container, .squidward {
-    display: flex;
-    flex-direction: column;
-  } */
+
+  .animated{
+        text-align: center;
+        width: 30%;
+        margin: auto;
+        font-size: 2em;
+    }
+/*Photo Overlay*/ 
+    
+.image {
+  opacity: 1;
+  display: block;
+  max-width: 400px; 
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+    
+}
+   
+.overlay{
+  position: relative; 
+}
+
+.overlay:hover .image {
+  opacity: 0.3;
+  
+}
+
+.overlay:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 
 
   .flex-grid {
