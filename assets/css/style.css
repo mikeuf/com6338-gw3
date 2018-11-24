@@ -175,7 +175,7 @@ body {
   color: white;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
- 
+
   /*display flex causes header to be contained  */
   flex-direction: column;
   padding: 0%;
@@ -195,27 +195,34 @@ main img{
   margin: auto;
 }
 
+
+
 main{
     display: flex;
     flex-direction: column;
 }
 
-
+/*
 #spongebob, #krabs, #patrick {
     display: flex;
 }
 
 
 #spongebob img{
-   max-width: 300px; 
+   max-width: 300px;
+}*/
+#spongebob img, #krabs img, #squidward img, #patrick img {
+
+  display: block;
+  margin: auto;
 }
 
 #spongebob-container{
     width: 80%;
-} 
+}
 
 #spongebob p, #krabs p, #patrick p, #squidward p{
-    
+
   font-size: 1.5em;
   padding-top: 5%;
   width: 90%;
@@ -269,6 +276,50 @@ footer {
   background-color: white;
   padding-top: 5%;
 }
+
+/*Photo Overlay*/
+
+.image {
+  opacity: 1;
+  display: block;
+  max-width: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.overlay{
+  position: relative;
+}
+
+.overlay:hover .image {
+  opacity: 0.3;
+
+}
+
+.overlay:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 
 /* *********** END CHARACTER PAGE ************** */
 
@@ -480,7 +531,7 @@ footer {
   #down-arrow-subpage {
     margin-bottom: 1em;
   }
-  
+
   main img{
     width: 30%;
     height: 20%;
@@ -497,18 +548,20 @@ footer {
     flex-direction: row;
   }
 
+
+
   .animated{
         text-align: center;
         width: 30%;
         margin: auto;
         font-size: 2em;
     }
-/*Photo Overlay*/ 
-    
+/*Photo Overlay*/
+
 .image {
   opacity: 1;
   display: block;
-  max-width: 400px; 
+  max-width: 400px;
   transition: .5s ease;
   backface-visibility: hidden;
 
@@ -523,16 +576,16 @@ footer {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-    
+
 }
-   
+
 .overlay{
-  position: relative; 
+  position: relative;
 }
 
 .overlay:hover .image {
   opacity: 0.3;
-  
+
 }
 
 .overlay:hover .middle {
