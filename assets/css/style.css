@@ -84,7 +84,7 @@ header img{
 
 /*  arrow and welcome h1 */
 #welcome-msg {
-  margin-top: 50vh;
+  margin-top: 55vh;
   color: #ffffff;
   text-align: center;
 }
@@ -149,8 +149,10 @@ body {
   background-image: url('../images/wave.jpg');
   background-color: #006CE2;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
-
 
 /* *********** END HOME PAGE ************** */
 
@@ -532,7 +534,6 @@ footer {
 
   .animated{
         text-align: center;
-        width: 30%;
         margin: auto;
         font-size: 2em;
     }
