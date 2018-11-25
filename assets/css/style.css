@@ -536,7 +536,7 @@ footer {
 
 	.desktop-menu ul li{
 		display: inline;
-		padding: 3% 12% 3% 12%;
+		padding: 3% 6% 3% 6%;
 		background-color: #ffffff;
 		transition-timing-function: ease;
 	}
@@ -544,8 +544,6 @@ footer {
 	.desktop-menu ul li a{
 	    color: #006CE2;
 	    text-decoration: none;
-	    text-decoration: none;
-	    position: relative;
 	    z-index: 0;
 	    cursor: pointer;
 	    padding: 5px 0px 5px 0px;
