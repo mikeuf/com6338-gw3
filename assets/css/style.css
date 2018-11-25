@@ -81,6 +81,38 @@ header img{
 .menu a:hover{text-decoration:none; color:#666;}
 /* ******* END HAMBURGER MENU STYLES ******* */
 
+/* *** Begin Main *** */
+#above-the-sea {
+height: 100vh;
+}
+
+#under-the-sea {
+height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  width: 70%;
+  padding: 5% 5% 10% 5%;
+  font-size: 1.5em;
+  margin: auto;
+  background-color: white;
+}
+
+#under-the-sea h2, h3 {
+  color: #006ce2;
+  padding-top: 5%;
+}
+
+#under-the-sea p {
+  color: #000000;
+  padding-top: 5%;
+}
+
+#under-the-sea img {
+  padding-top: 5%;
+  margin: auto;
+}
+
+
+/* *** End Main *** */
 
 /*  arrow and welcome h1 */
 #welcome-msg {
@@ -105,8 +137,6 @@ header img{
 .bubble {
   border-radius: 50%;
   border: 0.5rem solid #006CE2;
-/*    border: 0.5rem solid #5AC7E0;*/
-/*    background: #5AC7E0; */
   will-change: transform;
   transition: 1s;
 }
