@@ -250,6 +250,10 @@ main{
   font-weight: bold;
 }
 
+.pg a{
+    color: #006CE2;
+}
+
 .in-between {
   background-color: #5AC7E0;
   height: 15vh;
