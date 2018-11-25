@@ -1,3 +1,13 @@
+/*
+* bubbles.js
+* 
+* Adds animated bubbles to the home page. 
+* This was adapted from a post on StackOverflow:
+* https://codereview.stackexchange.com/questions/141595/show-bubble-animation-on-a-web-page
+* It has been heavily customized to fit the Spongebob theme
+*/
+
+
 const minBubbles = 5;
 const maxBubbles = minBubbles * 2;
 const minSize = 5;

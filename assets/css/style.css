@@ -87,11 +87,11 @@ height: 100vh;
 }
 
 #under-the-sea {
-height: 100vh;
+height: 100%;
   font-family: 'Roboto', sans-serif;
-  width: 70%;
+  width: 100%;
   padding: 5% 5% 10% 5%;
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: auto;
   background-color: white;
 }
@@ -107,8 +107,15 @@ height: 100vh;
 }
 
 #under-the-sea img {
+  max-width: 100%;
   padding-top: 5%;
   margin: auto;
+}
+
+#splash {
+  display: block;
+  height: 1rem;
+  width: 100%;
 }
 
 
@@ -695,7 +702,11 @@ footer {
 
 	.nav-wrap{
 	    width:35%;
-	}
+  }
+  
+  #under-the-sea {
+      width: 80%;
+      font-size: 1.5em;
 
 }
 /**************************** END MEDIA QUERY 740 *********************/
