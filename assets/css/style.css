@@ -276,29 +276,7 @@ body {
   padding-top: 5%;
   padding-left: 5%;
 }
-/*
-main img{
-  width: 80%;
-  display: block;
-  margin: auto;
-}
 
-
-
-main{
-    display: flex;
-    flex-direction: column;
-}
-
-
-#spongebob, #krabs, #patrick {
-    display: flex;
-}
-
-
-#spongebob img{
-   max-width: 300px;
-}*/
 #spongebob img, #krabs img, #squidward img, #patrick img {
 
   display: block;
@@ -524,10 +502,14 @@ footer {
 		font-family: 'Roboto', sans-serif;
 	}
 
-	.nav-wrap{
-		width:47%;
-	    text-align:center;
-	}
+  .nav-wrap{
+    min-width:55%;
+    text-align:right;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 	.desktop-menu ul{
 	    list-style-type: none;
@@ -542,11 +524,13 @@ footer {
 	}
 
 	.desktop-menu ul li a{
-	    color: #006CE2;
-	    text-decoration: none;
-	    z-index: 0;
-	    cursor: pointer;
-	    padding: 5px 0px 5px 0px;
+    color: #006CE2;
+    text-decoration: none;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    padding: 5px 0px 5px 0px;
 	}
 
 	.topBotomBordersOut a:before,
@@ -583,26 +567,15 @@ footer {
 
 }
 
-
 /**************************** END MEDIA QUERY 600 *********************/
 
 
-
-/**************************** START MEDIA QUERY 640 *********************/
-@media (min-width: 640px){
-	.nav-wrap{
-	    width:43%;
-	}
-}
-/**************************** END MEDIA QUERY 640 *********************/
 
 
 /**************************** START MEDIA QUERY 700 *********************/
 
 @media (min-width:700px) {
-  #logo {
-    max-height: 66px;
-  }
+
 
   #welcome-msg {
     font-size: 2rem;
@@ -634,61 +607,6 @@ footer {
         font-size: 2em;
     }
 
-  /*  main img{
-      width: 30%;
-      height: 20%;
-      margin: 0;
-    }
-
-    main p{
-      margin: 0;
-      padding-left: 5%;
-    }
-/*Photo Overlay
-
-.image {
-  opacity: 1;
-  display: block;
-  max-width: 400px;
-  transition: .5s ease;
-  backface-visibility: hidden;
-
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-
-}
-
-.overlay{
-  position: relative;
-}
-
-.overlay:hover .image {
-  opacity: 0.3;
-
-}
-
-.overlay:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}*/
-
-
-
 
 }
 
@@ -698,32 +616,11 @@ footer {
 
 @media (min-width: 740px){
 
-	.nav-wrap{
-	    width:35%;
-  }
-  
+
+
   #under-the-sea {
       width: 80%;
       font-size: 1.5em;
 
 }
 /**************************** END MEDIA QUERY 740 *********************/
-
-/**************************** START MEDIA QUERY 840 *********************/
-@media (min-width: 840px){
-
-	.nav-wrap{
-	    width:30%;
-	}
-}
-/**************************** END MEDIA QUERY 840 *********************/
-
-
-/**************************** START MEDIA QUERY 940 *********************/
-@media (min-width: 940px){
-
-	.nav-wrap{
-	    width:28%;
-	}
-}
-/**************************** END MEDIA QUERY 940 *********************/
