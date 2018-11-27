@@ -479,6 +479,10 @@ footer {
   padding: 2%;
 }
 
+iframe {
+border: 0;
+}
+
 .col iframe {
   width: 380px;
 }
