@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Spongebob</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<head>
+		<title>SpongeBob - Explore the Deep Blue Sea</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<link href="https://fonts.googleapis.com/css?family=Lato%7CRoboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<link type="text/css" rel="stylesheet" href="assets/css/animate.css" />
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
 
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv-printshiv.min.js"></script>
-    <![endif]-->
-    <script>
-      function navBtnToggle() {
-        var i = document.getElementById('nav-mobile');
-        if (i.style.display != 'block') {
-          i.style.display = 'block';
-        } else {
-          i.style.display = 'none';
-        }
-      }
-    </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	</head>
+	<body>
+
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+
+		<div id="container">
+
+			<header class="header">
 
 
-    <head>
-      <title>Spongebob</title>
-    </head>
-    <body>
-      <header>
-        <div id="header-top">
-        <img id="logo" src="assets/images/spongebob-logo.png" />
-        <a onClick="navBtnToggle();">
-          <p id="hamburger">&#9776;</p>
-        </a> 
-        </div> <!-- end header-top -->
-        <div id="header-bottom">
+				<nav class="menu">
+					<ul>
+						<li><a href="characters.html">Characters</a></li>
+						<li><a href="songs.html">Songs</a></li>
+					</ul>
+				</nav>
 
-        <nav id="nav-mobile">
-          <ul>
-            <li>
-              <a href="#">Patrick Star</a>
-            </li>
-            <li>
-              <a href="#">Mr. Krabs</a>
-            </li>
-            <li>
-              <a href="#">Squidward</a>
-            </li>
-          </ul>
-        </nav>
-        </div> <!-- end header-bottom -->
-      </header>
-      <main>
-        <h1 id="welcome-msg">EXPLORE THE<br />DEEP BLUE SEA</h1>
-        <p id="down-arrow">&#x25BC;</p>
-      </main>
-    </body>
+				<div class="desktop-header">
+
+					<a href="index.html"><img src="assets/images/spongebob-logo.png" alt="SpongeBob SquarePants" title="SpongeBob SquarePants" /></a>
+
+					<div class="nav-wrap topBotomBordersOut">
+						<nav class="desktop-menu">
+							<ul>
+								<li><a href="characters.html">Characters</a></li>
+								<li><a href="songs.html">Songs</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+			</header>
+
+			<main id="home-main">
+			<section id="above-the-sea">
+
+				<h1 id="welcome-msg" class="animated bounce">EXPLORE THE<br />DEEP BLUE SEA</h1>
+				<h2 id="down-arrow">&#x25BC;</h2>
+				<div class="bubbles"></div>
+			</section>
+			<section id="under-the-sea">
+				<h2>OHHHHHH!</h2>
+				<h3>Who lives in a pineapple under the sea?</h3>
+				<p>SpongeBob SquarePants is a character-driven cartoon that chronicles the nautical, and often nonsensical, adventures of SpongeBob, an incurably optimistic and earnest sea sponge, and his underwater friends. Dwelling a few fathoms beneath the tropical isle of Bikini Atoll in the sub-surface city of Bikini Bottom, SpongeBob lives in a two-story pineapple.</p>
+				<p>Instead of taking the logical approach to everyday challenges, SpongeBob approaches life in a wayward and unconventional way. Whether searching for the ultimate spatula to perfect his burger flipping technique at the Krusty Krab or just hanging out with his best friend Patrick (an amiable starfish), SpongeBob's good intentions and overzealous approach to life usually create chaos in his underwater world.</p>
+
+				<div class="overlay">
+					<img class ="image" src="assets/images/Spongebob.png" title="photo of Spongebob" alt="photo of Spongebob" />
+					<div class="middle">
+						<div class="text">Welcome!</div>
+					</div>
+				</div>
+
+			</section>
+			</main>
+
+			<script src="assets/js/hamburger.js"></script>
+			<script src="assets/js/bubbles.js"></script>
+			<script src="assets/js/background-change.js"></script>
+		</div> <!-- End Container Div -->
+	</body>
 </html>
-

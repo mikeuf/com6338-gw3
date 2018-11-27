@@ -2,72 +2,128 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
-html {
-  height: 100vh
+/* ********* Begin Univerisal codes ****** */
+#container{
+	max-width:1000px;
+	margin: auto;
 }
 
-body {
-  height: 100vh;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  background-image: url('../images/wave.jpg');
-  background-color: #006CE2;
-  background-size: cover;
+header{
+	background-color: #006CE2;
 }
 
-header {
-  padding: 5%;
+.desktop-header{
+	display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#header-top {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+header img{
+	width:60%;
+	max-width: 350px;
+	padding: 1.5%;
+}
+
+.desktop-menu {
+	display: none;
 }
 
 
+/* ******* HAMBURGER MENU STYLES ******* */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  margin:0% 5% 0% 0%;
+  color:#ffffff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  margin:0% 5% 0% 0%;
+  color:#006CE2;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+/* ******* END HAMBURGER MENU STYLES ******* */
 
-main {
-  padding: 5%;
+/* *** Begin Main *** */
+#above-the-sea {
+height: 100vh;
 }
 
-#logo {
-  max-height: 33px;
+#under-the-sea {
+height: 100%;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 5% 5% 10% 5%;
+  font-size: 1.25em;
+  margin: auto;
+  background-color: white;
 }
 
-#hamburger {
-  color: #ffffff;
-  font-size: 3rem;
-  position: relative;
-  top: -15px;
+#under-the-sea h2, h3 {
+  color: #006ce2;
+  padding-top: 5%;
 }
 
-#nav-mobile {
-  display: none;
+#under-the-sea p {
+  color: #000000;
+  padding-top: 5%;
 }
 
-#nav-mobile ul {
-  list-style: none;
-  float: left;
+#under-the-sea img {
+  max-width: 100%;
+  padding-top: 5%;
+  margin: auto;
 }
 
-#nav-mobile ul li {
+#splash {
+  display: block;
+  height: 1rem;
+  width: 100%;
 }
 
-#nav-mobile ul li a {
-  color: #ffffff;
-  font-size: 2rem;
-  text-decoration: none;
-}
 
+/* *** End Main *** */
+
+/*  arrow and welcome h1 */
 #welcome-msg {
-  margin-top: 50vh;
+  margin-top: 55vh;
   color: #ffffff;
   text-align: center;
 }
@@ -79,22 +135,495 @@ main {
   margin-top: 1.5rem;
 }
 
-
-/***** MEDIA QUERY *****/
-@media (min-width:700px) {
-  #logo {
-    max-height: 66px;
+/* *** Begin Bubbles *** */
+.bubbles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.bubble {
+  border-radius: 50%;
+  border: 0.5rem solid #006CE2;
+  will-change: transform;
+  transition: 1s;
+}
+.bubbleHover {
+  transform: scale(2);
+  background: #ffE448;
+  border: 0.5rem solid #ffE448;
+}
+.minDistance {
+  background: darkorange;
+}
+.maxDistance {
+  background: #5AC7E0;
+  background: rgba(0, 108, 226, 1);
+}
+.bubble-container {
+  position: absolute;
+  bottom: -20rem;
+  animation: bubbleRise 0.1s infinite ease-out;
+  will-change: transform;
+}
+@keyframes bubbleRise {
+  0% {
+    opacity: 0;
+    bottom: 0px;
   }
-
-  #welcome-msg {
-    font-size: 4rem;
+  15% {
+    bottom: 0;
+    opacity: 0.1;
+    margin-left: 0;
   }
-
-  #down-arrow {
-    font-size: 4rem;
+  25% {
+    opacity: 0.5;
   }
+  50% {
+    opacity: 1;
+    margin-left: 50px;
+  }
+  100% {
+    bottom: 30%;
+    opacity: 0;
+  }
+}
+/* *** Begin Bubbles *** */
+
+
+/* ************ Subpages formatting ************ */
+/*  Subpage Welcome message */
+#welcome-msg-subpage {
+  margin-top: 30vh;
+  color: #ffffff;
+  text-align: center;
+}
+
+#down-arrow-subpage {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1.5rem 0 5em 0;
+}
+
+#songs-body, #characters {
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background-image: url('../images/under-water.jpg');
+  background-color: #006CE2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.in-between {
+  background-color: #5AC7E0;
+  height: 15vh;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5%;
+  background-color: white;
+  padding-top: 5%;
+}
+
+/* ************ END Subpages formatting ************ */
+
+/* *********** START HOME PAGE ************** */
+body {
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background-image: url('../images/wave.jpg');
+  background-color: #006CE2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* *********** END HOME PAGE ************** */
+
+
+
+/* *********** START CHARACTER PAGE ************** */
+
+
+.character-headings {
+  font-family: 'Roboto', sans-serif;
+  color: #006ce2;
+  width: 70%;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+#characters {
+  /*display flex causes header to be contained  */
+  flex-direction: column;
+  padding: 0%;
+}
+
+.character-headings {
+  font-family: 'Roboto', sans-serif;
+  color: #006ce2;
+  width: 70%;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+#spongebob img, #krabs img, #squidward img, #patrick img {
+
+  display: block;
+  margin: auto;
+}
+
+#spongebob-container{
+    width: 80%;
+}
+
+#spongebob p, #krabs p, #patrick p, #squidward p{
+
+  font-size: 1.5em;
+  padding-top: 5%;
+  width: 90%;
+  margin: auto;
+}
+
+#spongebob, #krabs {
+  background-color: white;
+  color: black;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+
+#squidward,#patrick {
+  background-color:#5AC7E0;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  color: white;
+}
+
+.pg {
+  background-color: white;
+  width: 100%;
+  color: #006CE2;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-decoration: underline;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.pg a{
+    color: #006CE2;
+}
+
+.in-between {
+  background-color: #5AC7E0;
+  height: 15vh;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5%;
+  background-color: white;
+  padding-top: 5%;
+}
+
+/*Photo Overlay*/
+
+.image {
+  opacity: 1;
+  display: block;
+  max-width: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.overlay{
+  position: relative;
+}
+
+.overlay:hover .image {
+  opacity: 0.3;
+
+}
+
+.overlay:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #006ce2;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1.5rem 2.5rem;
+}
+
+
+/* *********** END CHARACTER PAGE ************** */
+
+
+/********* START SONGS Page ***********/
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background-color: #5AC7E0;
+  padding: 1em;
+  margin-bottom: 3rem;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 3rem;
+  background-color: transparent;
+  color: white;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
 }
 
 
 
+.hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
 
+
+/****** Flex Grid Song Page *******/
+
+.flex-grid {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.flex-grid .col {
+  padding: 2%;
+}
+
+iframe {
+border: 0;
+}
+
+.col iframe {
+  width: 380px;
+}
+
+
+/******************************** MEDIA QUERIES *********************/
+
+/**************************** START MEDIA QUERY 600 *********************/
+
+@media (min-width: 600px){
+	.menu, .hamburger, .cross{
+   		display: none;
+ 	}
+
+ 	.desktop-menu{
+   		display: block;
+	}
+
+	nav{
+		font-family: 'Roboto', sans-serif;
+	}
+
+  .nav-wrap{
+    min-width:55%;
+    text-align:right;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+	.desktop-menu ul{
+	    list-style-type: none;
+	}
+
+
+	.desktop-menu ul li{
+		display: inline;
+		padding: 2% 8% 2% 8%;
+		background-color: #ffffff;
+		transition-timing-function: ease;
+	}
+
+	.desktop-menu ul li a{
+    color: #006CE2;
+    text-decoration: none;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    padding: 5px 0px 5px 0px;
+	}
+
+	.topBotomBordersOut a:before,
+	.topBotomBordersOut a:after
+	{
+	    position: absolute;
+	    left: 0px;
+	    width: 100%;
+	    height: 2px;
+	    background: #006CE2;
+	    content: "";
+	    opacity: 0;
+	    transition: all 0.3s;
+	}
+
+	.topBotomBordersOut a:before
+	{
+	    top: 0px;
+	    transform: translateY(10px);
+	}
+
+	.topBotomBordersOut a:after
+	{
+	    bottom: 0px;
+	    transform: translateY(-10px);
+	}
+
+	.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after
+	{
+	    opacity: 1;
+	    transform: translateY(0px);
+	}
+
+
+}
+
+/**************************** END MEDIA QUERY 600 *********************/
+
+
+
+
+/**************************** START MEDIA QUERY 700 *********************/
+
+@media (min-width:700px) {
+
+
+  #welcome-msg {
+    font-size: 2rem;
+    margin-top: 70vh;
+  }
+  #down-arrow {
+    font-size: 2rem;
+  }
+  #down-arrow-subpage {
+    margin-bottom: 1em;
+  }
+
+
+
+  #spongebob, #patrick, #krabs, #squidward {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-grid {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .animated{
+        text-align: center;
+        margin: auto;
+        font-size: 2em;
+    }
+
+
+}
+
+/**************************** END MEDIA QUERY 700 *********************/
+
+/**************************** START MEDIA QUERY 740 *********************/
+
+@media (min-width: 740px){
+
+
+
+  #under-the-sea {
+      width: 80%;
+      font-size: 1.5em;
+    }
+}
+/**************************** END MEDIA QUERY 740 *********************/
